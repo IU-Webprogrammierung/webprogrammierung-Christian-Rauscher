@@ -1,0 +1,10 @@
+/* CSS for the first phase */
+
+/* remove any default margins or paddings */
+/* *{
+    margin: 0;
+    padding: 0;
+}
+body{
+    min-height: 100vh;
+}
