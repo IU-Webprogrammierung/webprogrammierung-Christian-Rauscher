@@ -1,6 +1,6 @@
 # 👩🏻‍💻 Persönlicher Webauftritt 
 ## ⌨️ Projekt: Webprogrammierung (DLBUXPWP01) 
-Dieses Projekt entstand im Rahmen des Moduls „Projekt: Webprogrammierung“ im Studiengang User Experience Design an der IU Internationalen Hochschule. Ziel ist die Erstellung einer persönlichen, responsiven Website mit HTML und CSS, die einen Einblick in meine Person, meinen beruflichen Werdegang und meine Interessen bietet.
+Dieses Projekt entsteht im Rahmen des Moduls „Projekt: Webprogrammierung“ im Studiengang User Experience Design an der IU Internationalen Hochschule. Ziel ist die Erstellung einer persönlichen, responsiven Website mit HTML und CSS, die einen Einblick in meine Person, meinen beruflichen Werdegang und meine Interessen bietet.
 
 ---
 
