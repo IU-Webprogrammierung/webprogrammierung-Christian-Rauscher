@@ -3,22 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     <title>CR - Hobbys</title>
     <link rel="stylesheet" href="css/style.css">
+    <!-- Header mit JS laden -->
+    <script>$(document).ready(function(){
+        $("header").load("comp/header.html");
+    });</script>
 </head>
 
 <body>
     <header>
-        <h1 class="brand"><a href = "index.html" aria-label="Startseite">CR</a></h1>
-        <nav aria-label="=Hauptnavigation">
-            <ul>
-                <li><a href="index.html">Start</a></li>
-                <li><a href="about.html">Über Mich</a></li>
-                <li><a href="cv.html">Lebenslauf</a></li>
-                <li><a href="study_UXD.html">Studium UXD</a></li>
-                <li><a href="hobbies.html" aria-current="page">Hobbys</a></li>
-            </ul>
-        </nav>
     </header>
 
     <main id="main">
