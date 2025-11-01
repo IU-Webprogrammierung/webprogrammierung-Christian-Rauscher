@@ -1,10 +1,112 @@
-/* CSS for the first phase */
 
-/* remove any default margins or paddings */
-/* *{
+
+/* -------------------------------------------------------*/
+/* COLORS */
+/* -------------------------------------------------------*/
+
+:root{
+    /*Grundton - Beige */
+    --beige2: oklch(0.8703 0.0944 66.71);
+    --beige1: oklch(0.8145 0.0944 66.71);
+    --beige: oklch(0.7744 0.0944 66.71);
+    --beige-darker: oklch(0.6513 0.0944 66.71);
+    --beige-darkest: oklch(0.5237 0.0944 66.71);
+
+    /*Akzent 1 - red */
+    --red: oklch(0.6098 0.1652 28.94);
+
+    /*Neutral */
+    --whitesmoke: oklch(0.97 0 0);
+    --grey1: oklch(0.80 0 0);
+    --grey: oklch(0.5842 0.0139 275.94);
+    --grey-darker: oklch(0.3576 0.0139 275.94);
+    --black: oklch(0.0846 0.0139 275.94);
+}
+
+/* -------------------------------------------------------*/
+/* FONT */
+/* -------------------------------------------------------*/
+
+
+
+
+/* -------------------------------------------------------*/
+/* STYLES */
+/* -------------------------------------------------------*/
+*{
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
+
+/* BODY */
 body{
-    min-height: 100vh;
+    font-family: "Inter"; sans-serif,
+    font-size: 16px;
+    line-height: 1.3;
+    background-color: var(--whitesmoke);
+    color: var(--black);
 }
+
+/* Header Area */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+    background-color: var(--beige2);
+}
+
+.logo {
+    cursor: pointer;
+    font-family: "Sarina", cursive;
+    color: var(--black);
+    font-size: 40px;
+    text-decoration: none;
+}
+
+.nav_links{
+    list-style: none;
+    display: flex;
+}
+
+.nav_button{
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 40px;
+    background-color: var(--beige);
+    cursor: pointer;
+} 
+
+.nav_button a{
+    font-family: "Inter"; sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    text-decoration: none;
+    color: var(--black);
+} 
+
+
+/* -------------------------------------------------------*/
+/* TEXT STYLES */
+/* -------------------------------------------------------*/
+
+h1{
+    font-family: "Inter"; sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 1;
+    margin: 0;
+    padding: 0 0 2rem 0;
+    hyphens: auto;
+}
+
+/* Positioning */
+
+
+/* Display */
+
+
+
+/* Other */
