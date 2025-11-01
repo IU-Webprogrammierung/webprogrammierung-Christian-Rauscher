@@ -19,95 +19,101 @@
     <header>
     </header>
 
-    <main>
-        <section aria-label="Vorstellung Christian Rauscher">
-            <h1>Hi, ich bin Chris!</h1>
-            <p>Ich bin angehender UX-Design-Student mit einem Hintergrund als Technischer Produktdesigner. Aktuell arbeite ich als Teamkoordinator in der CAS-Abteilung des Audi Interieur Designs in Ingolstadt.
-            Ich begeistere mich für Technologie, Design, Fotografie und Videografie. In meiner Freizeit bin ich gerne sportlich aktiv, sei es im Fitnessstudio, beim Joggen oder Skifahren im Winter.
-            Ich freue mich, dass du hier bist und mehr über mich und meine Arbeit erfahren möchtest!
-            </p>
-            <p>
-                <a href="about.html">Mehr über mich!</a>
-            </p>
-            <figure>
-                <img src="img/index/photo_index_Christian_Rauscher.webp" alt="Foto von Christian Rauscher im sommerlichen Outfit auf einer Brücke zu einer Insel im Meer.">
-            </figure>
+    <main class="grid-container">
+        <section aria-label="Vorstellung Christian Rauscher" class="grid-container-item">
+            <article class="grid-subcontainer-1">
+                <h1 class="grid-subcontainer-item1-1" style="grid-area: box-1">Hi, ich bin Chris!</h1>
+                <p class="grid-subcontainer-item1-2" style="grid-area: box-2">Ich bin angehender UX-Design-Student mit einem Hintergrund als Technischer Produktdesigner. Aktuell arbeite ich als Teamkoordinator in der CAS-Abteilung des Audi Interieur Designs in Ingolstadt.
+                Ich begeistere mich für Technologie, Design, Fotografie und Videografie. In meiner Freizeit bin ich gerne sportlich aktiv, sei es im Fitnessstudio, beim Joggen oder Skifahren im Winter.
+                Ich freue mich, dass du hier bist und mehr über mich und meine Arbeit erfahren möchtest!
+                </p>
+                <p class="grid-subcontainer-item1-3" style="grid-area: box-3">
+                    <a class="button" href="about.html">Mehr über mich!</a>
+                </p>
+                <figure class="grid-subcontainer-item1-4" style="grid-area: box-4">
+                    <img class="img-" src="img/index/photo_index_Christian_Rauscher.jpg" alt="Foto von Christian Rauscher im sommerlichen Outfit auf einer Brücke zu einer Insel im Meer.">
+                </figure>
+            </article>
         </section>
 
-        <section aria-labelledby="news">
-            <h1 ìd="news">Aktuelles</h1>
-            <p>Seit 2022 studiere ich User Experience Design an der IU Internationalen Hochschule – berufsbegleitend neben meiner Tätigkeit im Audi Interieur Design.
-            Das Studium verbindet meine Leidenschaft für Gestaltung, Technologie und benutzerzentrierte Lösungen. Dabei lerne ich, wie digitale Produkte durch gezielte Forschung, Design Thinking und iterative Prototypen wirklich auf die Bedürfnisse der User abgestimmt werden können.
-            Ich genieße besonders den interdisziplinären Charakter des Studiums, der technisches Verständnis, kreative Gestaltung und strategisches Denken miteinander vereint.
-            Im Jahr 2026 werde ich mein Studium mit der Bachelorarbeit abschließen und freue mich darauf, das erworbene Wissen noch stärker in meine berufliche Praxis einzubringen.</p>
-            <p> 
-                <a href="study_UXD.html">Mehr zum Studium UX-Design</a>
-            </p>
-            <figure>
-                <img src="img/index/photo_index_UX_Design_Design_Thinking.webp" alt="Das Foto zeigt Christian Rauscher beim Kleben eines Zettels während eines Brainstormings.">
-            </figure>
+        <section aria-labelledby="news" class="grid-container-item">
+            <article class="grid-subcontainer-2">
+                <h1 class="grid-subcontainer-item2-1">Aktuelles</h1>
+                <p class="grid-subcontainer-item2-2">Seit 2022 studiere ich User Experience Design an der IU Internationalen Hochschule – berufsbegleitend neben meiner Tätigkeit im Audi Interieur Design.
+                Das Studium verbindet meine Leidenschaft für Gestaltung, Technologie und benutzerzentrierte Lösungen. Dabei lerne ich, wie digitale Produkte durch gezielte Forschung, Design Thinking und iterative Prototypen wirklich auf die Bedürfnisse der User abgestimmt werden können.
+                Ich genieße besonders den interdisziplinären Charakter des Studiums, der technisches Verständnis, kreative Gestaltung und strategisches Denken miteinander vereint.
+                Im Jahr 2026 werde ich mein Studium mit der Bachelorarbeit abschließen und freue mich darauf, das erworbene Wissen noch stärker in meine berufliche Praxis einzubringen.</p>
+                <p class="grid-subcontainer-item2-3"> 
+                    <a class="button" href="study_UXD.html">Mehr zum Studium UX-Design</a>
+                </p>
+                <figure class="grid-subcontainer-item2-4">
+                    <img src="img/index/photo_index_UX_Design_Design_Thinking.webp" alt="Das Foto zeigt Christian Rauscher beim Kleben eines Zettels während eines Brainstormings.">
+                </figure>
+            </article>
         </section>
 
-        <section aria-label="Kontaktformular">
-            <h1>Kontakt</h1>
-            <p>Kontaktiere mich gerne über meine Social-Media-Kanäle, per E-Mail oder nutze einfach das Kontaktformular! Ich freue mich auf deine Nachricht!</p>
-            <form action="#" method="post">
-                <fieldset>
-                    <legend>Kontaktformular</legend>
-                        <label for ="company">Firma</label>
-                        <input id ="company" name ="company" type ="text" required>
+        <section aria-label="Kontaktformular" class="grid-container-item">
+            <article class="grid-subcontainer-3">
+                <h1>Kontakt</h1>
+                <p>Kontaktiere mich gerne über meine Social-Media-Kanäle, per E-Mail oder nutze einfach das Kontaktformular! Ich freue mich auf deine Nachricht!</p>
+                <form action="#" method="post">
+                    <fieldset>
+                        <legend>Kontaktformular</legend>
+                            <label for ="company">Firma</label>
+                            <input id ="company" name ="company" type ="text" required>
 
-                        <label for ="salutation">Anrede</label>
-                        <select id ="salutation" name ="salutation">
-                            <optgroup label="salutation">
-                                <option value="s1"></option>
-                                <option value="s2">Herr</option>
-                                <option value="s3">Frau</option>
-                                <option value="s4">keine Angabe</option>
-                            </optgroup>
-                        </select><br>
+                            <label for ="salutation">Anrede</label>
+                            <select id ="salutation" name ="salutation">
+                                <optgroup label="salutation">
+                                    <option value="s1"></option>
+                                    <option value="s2">Herr</option>
+                                    <option value="s3">Frau</option>
+                                    <option value="s4">keine Angabe</option>
+                                </optgroup>
+                            </select><br>
 
-                        <label for ="title">Titel</label>
-                        <select id ="title" name ="title">
-                            <optgroup label="title">
-                                <option value="t1"></option>
-                                <option value="t2">Dr.</option>
-                                <option value="t3">Prof.</option>
-                                <option value="t4">Prof. Dr.</option>
-                            </optgroup>
-                        </select><br>
+                            <label for ="title">Titel</label>
+                            <select id ="title" name ="title">
+                                <optgroup label="title">
+                                    <option value="t1"></option>
+                                    <option value="t2">Dr.</option>
+                                    <option value="t3">Prof.</option>
+                                    <option value="t4">Prof. Dr.</option>
+                                </optgroup>
+                            </select><br>
 
-                        <label for ="firstname">Vorname</label>
-                        <input id ="firstname" name ="firstname" type ="text" required>
+                            <label for ="firstname">Vorname</label>
+                            <input id ="firstname" name ="firstname" type ="text" required>
 
-                        <label for ="lastname">Nachname</label>
-                        <input id ="lastname" name ="lastname" type ="text" required>
+                            <label for ="lastname">Nachname</label>
+                            <input id ="lastname" name ="lastname" type ="text" required>
 
-                        <label for ="street">Straße</label>
-                        <input id ="street" name ="street" type ="text">
+                            <label for ="street">Straße</label>
+                            <input id ="street" name ="street" type ="text">
 
-                        <label for ="housenumber">Hausnummer</label>
-                        <input id ="housenumber" name ="housenumber" type ="number">
+                            <label for ="housenumber">Hausnummer</label>
+                            <input id ="housenumber" name ="housenumber" type ="number">
 
-                        <label for ="postalcode">Postleitzahl</label>
-                        <input id ="postalcode" name ="postalcode" type ="number">
+                            <label for ="postalcode">Postleitzahl</label>
+                            <input id ="postalcode" name ="postalcode" type ="number">
 
-                        <label for ="city">Ort</label>
-                        <input id ="city" name ="city" type ="text">
+                            <label for ="city">Ort</label>
+                            <input id ="city" name ="city" type ="text">
 
-                        <label for ="email">E-Mail</label>
-                        <input id ="email" name ="email" type ="email" required>
+                            <label for ="email">E-Mail</label>
+                            <input id ="email" name ="email" type ="email" required>
 
-                        <label for ="phone">Telefonnummer</label>
-                        <input id ="phone" name ="phone" type ="tel" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+                            <label for ="phone">Telefonnummer</label>
+                            <input id ="phone" name ="phone" type ="tel" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
 
-                        <label for ="message">Nachricht</label>
-                        <textarea name="message" rows="10" cols="30"></textarea><br>
+                            <label for ="message">Nachricht</label>
+                            <textarea name="message" rows="10" cols="30"></textarea><br>
 
-                        <input type="submit" value="Absenden">
-                        <input type="reset" value="Abbrechen">
-                </fieldset>
-            </form>
+                            <input type="submit" value="Absenden">
+                            <input type="reset" value="Abbrechen">
+                    </fieldset>
+                </form>
+            </article>
         </section>
     </main>
 

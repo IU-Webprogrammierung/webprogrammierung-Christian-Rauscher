@@ -74,7 +74,7 @@ header{
     padding: 10px 20px;
     margin: 5px;
     border: none;
-    border-radius: 40px;
+    border-radius: 16px;
     background-color: var(--beige);
     cursor: pointer;
 } 
@@ -95,18 +95,90 @@ header{
 h1{
     font-family: "Inter"; sans-serif;
     font-weight: 700;
-    font-size: 2rem;
+    font-size: 3rem;
     line-height: 1;
-    margin: 0;
-    padding: 0 0 2rem 0;
     hyphens: auto;
+}
+
+p{
+    font-family: "Inter"; sans-serif;
+    font-weight: 400;
+    font-size: 1.2em;
+    line-height: 1.4;
 }
 
 /* Positioning */
 
+.grid-container{
+	display: grid;
+	grid-template-columns: 1fr;
+    gap: 1em;
+    margin: 1em;
+}
+
+.grid-container-item{
+    padding: 2em;
+    background-color: var(--grey1);
+    border-radius: 12px;
+    color: var(--black);
+}
+
+.grid-subcontainer-1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    margin: 0em 20em 0em 20em;
+    gap: 2rem;
+    grid-template-areas:
+    "box-4 box-1"
+    "box-4 box-2"
+    "box-4 box-3";
+}
+
+.grid-subcontainer-item1-1 { grid-area: box-1; text-align: right; }
+.grid-subcontainer-item1-2 { grid-area: box-2; justify-self: center; align-self: center; }
+.grid-subcontainer-item1-3 { grid-area: box-3; justify-self: center; align-self: center; margin: 1.5em;}
+.grid-subcontainer-item1-4 {
+grid-area: box-4;
+align-self: stretch;
+justify-self: stretch;
+display: grid;             /* für place-items */
+place-items: center;       /* Bild mittig */
+margin: 0;                 /* <figure> Standard-Margin entfernen */
+overflow: hidden;          /* falls Bild größer ist, nichts ragt raus */
+
+}
+
+.grid-subcontainer-item1-4 img {
+display: block;         /* entfernt Inline-Lücke */
+max-width: 70%;        /* responsive */
+height: auto;
+border-radius: 25px;
+}
+
+
+.grid-subcontainer-2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    margin: 0em 20em 0em 20em;
+    gap: 2rem;
+    grid-template-areas:
+    "box-4 box-1"
+    "box-4 box-2"
+    "box-4 box-3";
+}
+
 
 /* Display */
 
+.button{
+    background-color: var(--beige-darker);
+    border-radius: 16px;
+    padding: 1em;
+    text-decoration: none;
+    color: var(--black);
+}
 
 
 /* Other */
