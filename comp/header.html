@@ -1,10 +1,19 @@
-<a href="index.html" aria-label="Startseite" class="logo">CR</a>
+<a href="index.html" aria-label="Startseite" class="header-logo">CR</a>
 <nav aria-label="=Hauptnavigation">
-    <ul class="nav_links">
-        <li class="nav_button"><a href="index.html" >Start</a></li>
-        <li class="nav_button"><a href="about.html" >Über Mich</a></li>       
-        <li class="nav_button"><a href="cv.html" >Lebenslauf</a></li>
-        <li class="nav_button"><a href="study_UXD.html" >Studium UXD</a></li>
-        <li class="nav_button"><a href="hobbies.html" >Hobbys</a></li>
+    <ul class="sidebar">
+        <li class="sidebar-button" onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="26px" fill="#000000"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+        <li class="sidebar-button"><a href="index.html" >Start</a></li>
+        <li class="sidebar-button"><a href="about.html" >Über Mich</a></li>       
+        <li class="sidebar-button"><a href="cv.html" >Lebenslauf</a></li>
+        <li class="sidebar-button"><a href="study_UXD.html" >Studium UXD</a></li>
+        <li class="sidebar-button"><a href="hobbies.html" >Hobbys</a></li>
+    </ul>
+    <ul class="header-nav">
+        <li class="nav-button"><a href="index.html">Start</a></li>
+        <li class="nav-button"><a href="about.html" >Über Mich</a></li>       
+        <li class="nav-button"><a href="cv.html" >Lebenslauf</a></li>
+        <li class="nav-button"><a href="study_UXD.html" >Studium UXD</a></li>
+        <li class="nav-button" ><a href="hobbies.html" >Hobbys</a></li>
+        <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
     </ul>
 </nav>
