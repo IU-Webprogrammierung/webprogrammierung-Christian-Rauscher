@@ -56,6 +56,11 @@ header{
     align-items: center;
     padding: 25px;
     background-color: var(--beige2);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    left: 0
+
 }
 
 .header-logo{
@@ -146,16 +151,14 @@ header{
     cursor: pointer;
 }
 
-@media(max-width: 769px){
-    .nav-button{
-        display: none;
-    }
-
-    .menu-button{
-        display: block;
-    }
+/* FOOTER */
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+    background-color: var(--beige2);
 }
-
 
 /* -------------------------------------------------------*/
 /* TEXT STYLES */
@@ -180,72 +183,86 @@ p{
 
 /*  INDEX  */
 
-.grid-container{
-	display: grid;
-	grid-template-columns: 1fr;
-    gap: 1em;
-    margin: 1em;
+.index-main-con{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    gap: 2em;
+    border: var(--red);
+    margin: 9em 2em 2em 2em;
 }
 
-.grid-container-item{
-    padding: 2em;
+.index-main-subcon{
+    border: red;
+    border-style: dashed;
     background-color: var(--grey1);
-    border-radius: 12px;
-    color: var(--black);
+    border-radius: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
-.grid-subcontainer-1{
+.index-main-subcon-content{
+    padding: 2rem;
+    border: yellow;
+    border-style: dashed;
+    order: 2;
+    width: 1024px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto auto;
-    margin: 0em 20em 0em 20em;
-    gap: 2rem;
     grid-template-areas:
     "box-4 box-1"
     "box-4 box-2"
     "box-4 box-3";
 }
 
-.grid-subcontainer-item1-1 { grid-area: box-1; text-align: right; }
-.grid-subcontainer-item1-2 { grid-area: box-2; justify-self: center; align-self: center; }
-.grid-subcontainer-item1-3 { grid-area: box-3; justify-self: center; align-self: center; margin: 1.5em;}
-.grid-subcontainer-item1-4 {
-grid-area: box-4;
-align-self: stretch;
-justify-self: stretch;
-display: grid;             /* für place-items */
-place-items: center;       /* Bild mittig */
-margin: 0;                 /* <figure> Standard-Margin entfernen */
-overflow: hidden;          /* falls Bild größer ist, nichts ragt raus */
-
+.index-main-subcon-img{
+    border: green;
+    border-style: dashed;
+    grid-area: box-4;
+    align-self: stretch;
+    justify-self: stretch;
+    display: grid;             /* für place-items */
+    place-items: center;       /* Bild mittig */
+    margin: 0;                 /* <figure> Standard-Margin entfernen */
+    overflow: hidden;          /* falls Bild größer ist, nichts ragt raus */
+    > img {
+        display: block;         /* entfernt Inline-Lücke */
+        max-width: 90%;        /* responsive */
+        height: auto;
+        border-radius: 25px;}
 }
 
-.grid-subcontainer-item1-4 img {
-display: block;         /* entfernt Inline-Lücke */
-max-width: 70%;        /* responsive */
-height: auto;
-border-radius: 25px;
+.index-main-subcon-title{
+    border: green;
+    border-style: dashed;
+    grid-area: box-1;
+    text-align: right;
+    padding: 0em 0em 1rem 0em;
 }
 
-
-.grid-subcontainer-2{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto auto;
-    margin: 0em 20em 0em 20em;
-    gap: 2rem;
-    grid-template-areas:
-    "box-4 box-1"
-    "box-4 box-2"
-    "box-4 box-3";
+.index-main-subcon-text{
+    border: green;
+    border-style: dashed;
+    grid-area: "box-2";
+    justify-self: center; 
+    align-self: center;
+    padding: 1em 0em 1em 0em;
 }
+
+.index-main-subcon-btn{
+    border: green;
+    border-style: dashed;
+    grid-area: box-3; 
+    justify-self: center; 
+    align-self: center;
+    padding: 1em;
+}
+
 
 
 /* ABOUT */
-
-.about-main{
-
-}
 
 
 /* Display */
@@ -260,3 +277,46 @@ border-radius: 25px;
 
 
 /* Other */
+
+@media(max-width: 769px){
+    
+    /*Navigation-Bar*/
+    .nav-button{
+        display: none;
+    }
+
+    .menu-button{
+        display: block;
+    }
+
+    /*Index-Page*/
+    .index-main-con{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    gap: 2em;
+    border: var(--red);
+    margin: 7.5em 1em 1em 1em;
+}
+    .index-main-subcon-content{
+    margin: 0rem;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas:
+    "box-1"
+    "box-4"
+    "box-2"
+    "box-3";
+    }
+
+ 
+
+
+}
+
+@media all and (min-width: 1023px){
+    
+
+}
