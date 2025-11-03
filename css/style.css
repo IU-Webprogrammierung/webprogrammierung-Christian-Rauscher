@@ -165,7 +165,7 @@ footer{
 /* -------------------------------------------------------*/
 
 h1{
-    font-family: "Inter"; sans-serif;
+    font-family: "Inter"; sans-serif; 
     font-weight: 700;
     font-size: 3rem;
     line-height: 1;
@@ -173,7 +173,7 @@ h1{
 }
 
 p{
-    font-family: "Inter"; sans-serif;
+    font-family: "Inter"; sans-serif; 
     font-weight: 400;
     font-size: 1.2em;
     line-height: 1.4;
@@ -182,7 +182,6 @@ p{
 /* Positioning */
 
 /*  INDEX  */
-
 .index-con{
     display: flex;
     flex-direction: column;
@@ -314,7 +313,7 @@ p{
 .index-subcon-2-btn{
     border: green;
     border-style: dashed;
-    grid-area: box-3; 
+    grid-area: "box-3"; 
     justify-self: center; 
     align-self: center;
     padding: 1em;
@@ -328,16 +327,131 @@ p{
     width: 1024px;
     display: grid;
     gap: 2rem;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-template-rows: auto auto auto;
     grid-template-areas:
-    "box-1 box-1"
-    "box-2 box-2"
-    "box-3 box-3";
+    "box-1"
+    "box-2"
+    "box-3";
+}
+
+.index-subcon-3-title{
+    border: green;
+    border-style: dashed;
+    grid-area: box-1;
+    text-align: left;
+    padding: 0em 0em 1rem 0em;
+}
+
+.index-subcon-3-text{
+    border: green;
+    border-style: dashed;
+    grid-area: "box-2";
+    justify-self: center; 
+    align-self: center;
+    padding: 1em 0em 1em 0em;
+}
+
+.index-subcon-3-form{
+    width: 100%;
+    text-align: left;
+    font-family: "Inter"; sans-serif;
+    border: pink;
+    border-style: dashed;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;  
+    & label{
+        display: block;
+        font-weight: 400;
+        font-size: 1em;
+        line-height: 1;
+        margin-bottom: 0.5em;
+        margin-top: 1em;
+    }
+    & input[type="text"]{
+        padding: 10px;
+        font-weight: 300;
+        font-size: 1.2em;
+        line-height: 1.4;
+        border-radius: 10px;
+        border-style: none;
+        background-color: var(--whitesmoke);
+
+    }
+    & input[type="text"]::placeholder {
+    color: var(--beige);
+    }
+    input[type="text"]:focus::placeholder {
+    visibility: hidden;
+    }
+    & input[type="number"]{
+        padding: 10px;
+        font-weight: 300;
+        font-size: 1.2em;
+        line-height: 1.4;
+        border-radius: 10px;
+        border-style: none;
+        background-color: var(--whitesmoke);
+        width: 150px;
+    }
+    & input[type="email"]{
+        padding: 10px;
+        font-weight: 300;
+        font-size: 1.2em;
+        line-height: 1.4;
+        border-radius: 10px;
+        border-style: none;
+        background-color: var(--whitesmoke);
+    }
+    & input[type="tel"]{
+        padding: 10px;
+        font-weight: 300;
+        font-size: 1.2em;
+        line-height: 1.4;
+        border-radius: 10px;
+        border-style: none;
+        background-color: var(--whitesmoke);
+    }
+    & select {
+        padding: 10px;
+        font-weight: 300;
+        font-size: 1.2em;
+        border-style: none;
+        border-radius: 10px;
+        background-color: var(--whitesmoke);
+        width: 150px;
+    }
+    & textarea {
+        padding: 10px;
+        font-weight: 300;
+        font-family: "Inter"; sans-serif;
+        font-size: 1.2em;
+        border-style: none;
+        border-radius: 10px;
+        background-color: var(--whitesmoke);
+        width: 100%;
+        height: 300px;
+    }
+    & .message-area{
+        width: 100%;
+    }
+    & .form-button{
+        width: 100%;
+        
+    }
+    & div{
+        flex-grow: 1;
+    }
 }
 
 
+
+
 /* ABOUT */
+
+
+
 
 
 /* Display */
@@ -345,6 +459,7 @@ p{
 .button{
     background-color: var(--beige);
     border-radius: 16px;
+    border-style: none;
     padding: 1em;
     text-decoration: none;
     color: var(--black);
@@ -387,10 +502,10 @@ p{
     "box-3";
     }
     .index-subcon-content-2{
+    margin: 0rem;
     padding: 1rem;
-    order: 2;
     display: grid;
-    gap: 2rem;
+    gap: 1rem;
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto auto;
     grid-template-areas:
