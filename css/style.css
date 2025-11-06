@@ -22,7 +22,7 @@
     --grey-darker: oklch(0.3576 0.0139 275.94);
     --black: oklch(0.0846 0.0139 275.94);
 
-    --border: dashed
+    --border: none
 }
 
 /* -------------------------------------------------------*/
@@ -761,6 +761,90 @@ p{
 
 
 }
+
+/* CV */
+.cv-con{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    gap: 2em;
+    margin: 9em 2em 2em 2em;
+
+    & .cv-subcon{
+        border: red;
+        border-style: var(--border);
+        background-color: var(--grey1);
+        border-radius: 25px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+
+        & .cv-subcon-content{
+            padding: 2rem;
+            border: yellow;
+            border-style: var(--border);
+            width: 1024px; 
+
+            & .cv-subcon-title{
+                border: green;
+                border-style: var(--border);
+                grid-area: box-1;
+                text-align: left;
+                padding: 0em;
+                margin-bottom: 1.5rem;
+                
+            }
+
+            & .cv-subcon-step-container{
+                border: pink;
+                border-style: var(--border);
+                display: flex;
+                flex-direction: column;
+                gap: 1.5em;
+
+                & .cv-subcon-step-card{
+                    border: violet;
+                    border-style: var(--border);
+                    display: flex; 
+                    justify-content: space-between;
+                    flex-wrap: wrap;
+                    height: 150px;
+                    gap: 3em;
+
+                    & figure{
+                        width: 150px;
+                        overflow: hidden;
+                        background-color: white;
+                        border-radius: 20px;                        
+                        & img{
+                            display: flex;
+                            margin-left: auto;
+                            margin-right: auto;
+                            vertical-align: center;
+                            width: 80%;     
+                        }
+
+                    }
+
+                    & div{
+                        padding: 1em;
+                        background-color: var(--beige1);
+                        border-radius: 20px;
+                        flex-grow: 1;
+
+                    }
+
+
+                }
+            }
+
+            
+        } 
+
+    
+    }
+}
+
 
 
 /* Display */
