@@ -21,6 +21,8 @@
     --grey: oklch(0.5842 0.0139 275.94);
     --grey-darker: oklch(0.3576 0.0139 275.94);
     --black: oklch(0.0846 0.0139 275.94);
+
+    --border: dashed
 }
 
 /* -------------------------------------------------------*/
@@ -172,6 +174,14 @@ h1{
     hyphens: auto;
 }
 
+h2{
+    font-family: "Inter"; sans-serif; 
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 1;
+    hyphens: auto;
+}
+
 p{
     font-family: "Inter"; sans-serif; 
     font-weight: 400;
@@ -193,7 +203,7 @@ p{
 
 .index-subcon{
     border: red;
-    border-style: dashed;
+    border-style: var(--border);
     background-color: var(--grey1);
     border-radius: 25px;
     display: flex;
@@ -204,7 +214,7 @@ p{
 .index-subcon-content-1{
     padding: 2rem;
     border: yellow;
-    border-style: dashed;
+    border-style: var(--border);
     order: 2;
     width: 1024px;
     display: grid;
@@ -219,7 +229,7 @@ p{
 
 .index-subcon-1-img{
     border: green;
-    border-style: dashed;
+    border-style: var(--border);
     grid-area: box-4;
     align-self: stretch;
     justify-self: stretch;
@@ -236,7 +246,7 @@ p{
 
 .index-subcon-1-title{
     border: green;
-    border-style: dashed;
+    border-style: var(--border);
     grid-area: box-1;
     text-align: right;
     padding: 0em 0em 1rem 0em;
@@ -244,7 +254,7 @@ p{
 
 .index-subcon-1-text{
     border: green;
-    border-style: dashed;
+    border-style: var(--border);
     grid-area: "box-2";
     justify-self: center; 
     align-self: center;
@@ -253,7 +263,7 @@ p{
 
 .index-subcon-1-btn{
     border: green;
-    border-style: dashed;
+    border-style: var(--border);
     grid-area: box-3; 
     justify-self: center; 
     align-self: center;
@@ -263,7 +273,7 @@ p{
 .index-subcon-content-2{
     padding: 2rem;
     border: yellow;
-    border-style: dashed;
+    border-style: var(--border);
     order: 2;
     width: 1024px;
     display: grid;
@@ -278,7 +288,7 @@ p{
 
 .index-subcon-2-img{
     border: green;
-    border-style: dashed;
+    border-style: var(--border);
     grid-area: box-4;
     align-self: stretch;
     justify-self: stretch;
@@ -295,7 +305,7 @@ p{
 
 .index-subcon-2-title{
     border: green;
-    border-style: dashed;
+    border-style: var(--border);
     grid-area: box-1;
     text-align: left;
     padding: 0em 0em 1rem 0em;
@@ -303,7 +313,7 @@ p{
 
 .index-subcon-2-text{
     border: green;
-    border-style: dashed;
+    border-style: var(--border);
     grid-area: "box-2";
     justify-self: center; 
     align-self: center;
@@ -312,7 +322,7 @@ p{
 
 .index-subcon-2-btn{
     border: green;
-    border-style: dashed;
+    border-style: var(--border);
     grid-area: "box-3"; 
     justify-self: center; 
     align-self: center;
@@ -322,7 +332,7 @@ p{
 .index-subcon-content-3{
     padding: 2rem;
     border: yellow;
-    border-style: dashed;
+    border-style: var(--border);
     order: 2;
     width: 1024px;
     display: grid;
@@ -337,7 +347,7 @@ p{
 
 .index-subcon-3-title{
     border: green;
-    border-style: dashed;
+    border-style: var(--border);
     grid-area: box-1;
     text-align: left;
     padding: 0em 0em 1rem 0em;
@@ -345,7 +355,7 @@ p{
 
 .index-subcon-3-text{
     border: green;
-    border-style: dashed;
+    border-style: var(--border);
     grid-area: "box-2";
     justify-self: center; 
     align-self: center;
@@ -357,7 +367,7 @@ p{
     text-align: left;
     font-family: "Inter"; sans-serif;
     border: pink;
-    border-style: dashed;
+    border-style: var(--border);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;  
@@ -447,11 +457,310 @@ p{
 
 
 
-
 /* ABOUT */
+.about-con{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    gap: 2em;
+    margin: 9em 2em 2em 2em;
+}
+
+.about-subcon{
+    border: red;
+    border-style: var(--border);
+    background-color: var(--grey1);
+    border-radius: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+/* Über Mich - erster Container */
+.about-subcon-content-1{
+    padding: 2rem;
+    border: yellow;
+    border-style: var(--border);
+    order: 2;
+    width: 1024px;
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+    "box-1 box-1"
+    "box-2 box-4"
+    "box-2 box-3";
+
+    & .about-subcon-1-img{
+    border: green;
+    border-style: var(--border);
+    grid-area: box-4;
+    align-self: stretch;
+    justify-self: stretch;
+    display: grid;             /* für place-items */
+    place-items: center;       /* Bild mittig */
+    margin: 0;                 /* <figure> Standard-Margin entfernen */
+    overflow: hidden;          /* falls Bild größer ist, nichts ragt raus */
+    > img {
+        display: block;         /* entfernt Inline-Lücke */
+        max-width: 100%;        /* responsive */
+        height: auto;
+        border-radius: 25px;}
+    }
+    & .about-subcon-1-title{
+        border: green;
+        border-style: var(--border);
+        grid-area: box-1;
+        text-align: left;
+        padding: 0em;
+    }
+    & .about-subcon-1-text{
+        border: green;
+        border-style: var(--border);
+        grid-area: "box-2";
+        justify-self: center; 
+        align-self: center;
+        padding: 1em 0em 1em 0em;
+    }
+    & .about-subcon-1-btn{
+        border: green;
+        border-style: var(--border);
+        grid-area: box-3; 
+        justify-self: center; 
+        align-self: center;
+        padding: 1em;
+    }
+    
+
+}
+
+/* Über Mich - Skills Container */
+.about-subcon-content-2{
+    padding: 2rem;
+    border: yellow;
+    border-style: var(--border);
+    order: 2;
+    width: 1024px;
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+    "box-1 box-1 box-1 box-1"
+    "box-2 box-3 box-4 box-5"
+    "box-6 box-7 box-8 box-9";
+
+    & .about-subcon-2-title{
+        border: green;
+        border-style: var(--border);
+        grid-area: box-1;
+        text-align: left;
+        padding: 0em;
+    }
+    & .about-subcon-2-card-1{
+        grid-area: box-2;
+        border: green;
+        border-style: var(--border);
+        & > figure{
+            border: green;
+            border-style: var(--border);
+            align-self: stretch;
+            justify-self: stretch;
+            display: grid;             /* für place-items */
+            place-items: center;       /* Bild mittig */
+            margin:                 /* <figure> Standard-Margin entfernen */
+            overflow: hidden;          /* falls Bild größer ist, nichts ragt raus */
+            background-color: var(--grey-darker);
+            border-radius: 20px;
+            height: 150px;
+            > img {
+                display: block;         /* entfernt Inline-Lücke */
+                max-width: 100%;        /* responsive */
+                height: auto;
+                border-radius: 25px;
+                }
+            }
+        & > div{
+            border: green;
+            border-style: var(--border);
+            justify-self: center; 
+            align-self: center;
+            max-width: 100%;
+            margin-top: 1em;
+            padding: 1em;
+            background-color: var(--grey);
+            border-radius: 20px;
+            width: 100%;
+        }
+        
+    }
+
+    & .about-subcon-2-card-2{
+        grid-area: box-3;
+        border: green;
+        border-style: var(--border);
+        > figure{
+            border: green;
+            border-style: var(--border);
+            align-self: stretch;
+            justify-self: stretch;
+            display: grid;             /* für place-items */
+            place-items: center;       /* Bild mittig */
+            margin: 0;                 /* <figure> Standard-Margin entfernen */
+            overflow: hidden;          /* falls Bild größer ist, nichts ragt raus */
+            background-color: var(--grey-darker);
+            border-radius: 20px;
+            height: 150px;
+            > img {
+                display: block;         /* entfernt Inline-Lücke */
+                max-width: 70%;        /* responsive */
+                height: auto;
+                border-radius: 0px;
+            }
+        }
+        & div{
+            border: green;
+            border-style: var(--border);
+            justify-self: center; 
+            align-self: center;
+            max-width: 100%;
+            margin-top: 1em;
+            padding: 1em;
+            background-color: var(--grey);
+            border-radius: 20px;
+            width: 100%;
+        }
+    }
+
+    & .about-subcon-2-card-3{
+        grid-area: box-4;
+        border: green;
+        border-style: var(--border);
+        > figure{
+            border: green;
+            border-style: var(--border);
+            align-self: stretch;
+            justify-self: stretch;
+            display: grid;             /* für place-items */
+            place-items: center;       /* Bild mittig */
+            margin: 0;                 /* <figure> Standard-Margin entfernen */
+            overflow: hidden;          /* falls Bild größer ist, nichts ragt raus */
+            background-color: var(--grey-darker);
+            border-radius: 20px;
+            height: 150px;
+            > img {
+                display: block;         /* entfernt Inline-Lücke */
+                max-width: 100%;        /* responsive */
+                height: auto;
+                border-radius: 25px;
+            }
+        }
+        & div{
+            border: green;
+            border-style: var(--border);
+            justify-self: center; 
+            align-self: center;
+            max-width: 100%;
+            margin-top: 1em;
+            padding: 1em;
+            background-color: var(--grey);
+            border-radius: 20px;
+            width: 100%;
+        }
+    }
+    
+    & .about-subcon-2-card-4{
+        grid-area: box-5;
+        border: green;
+        border-style: var(--border);
+        > figure{
+            border: green;
+            border-style: var(--border);
+            align-self: stretch;
+            justify-self: stretch;
+            display: grid;             /* für place-items */
+            place-items: center;       /* Bild mittig */
+            margin: 0;                 /* <figure> Standard-Margin entfernen */
+            overflow: hidden;          /* falls Bild größer ist, nichts ragt raus */
+            background-color: var(--grey-darker);
+            border-radius: 20px;
+            height: 150px;
+            > img {
+                display: block;         /* entfernt Inline-Lücke */
+                max-width: 100%;        /* responsive */
+                height: auto;
+                border-radius: 25px;
+            }
+        }
+        & div{
+            border: green;
+            border-style: var(--border);
+            justify-self: center; 
+            align-self: center;
+            max-width: 100%;
+            margin-top: 1em;
+            padding: 1em;
+            background-color: var(--grey);
+            border-radius: 20px;
+            width: 100%;
+        }
+    }
+} 
+
+/* Über Mich - Fotos Container */
+.about-subcon-content-3{
+    padding: 2rem;
+    border: yellow;
+    border-style: var(--border);
+    order: 2;
+    width: 1024px;
+    display: block;
+
+    & .about-subcon-3-title{
+        border: green;
+        border-style: var(--border);
+        grid-area: box-1;
+        text-align: left;
+        padding: 0em 0em 1em 0em;
+    }
+
+    & .about-subcon-3-photos-con{
+        border: green;
+        border-style: var(--border);
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 15px;
+        justify-content: center;
 
 
+        > .about-subcon-3-photocard{
+            border: 1px pink;
+            border-style: var(--border);
+            overflow: hidden;
+            border-radius: 20px;
 
+            > figure {
+                & img {
+                border-radius: 20px;
+                width: 100%;
+            }
+            }
+            > div{
+                background-color: var(--grey);
+                width: 100%;
+                min-height: 100%;
+                padding: 1em;
+                margin-top: 0.5em;
+                border-radius: 20px;
+            }
+        }
+
+
+    }
+
+
+}
 
 
 /* Display */
