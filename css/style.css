@@ -150,14 +150,30 @@ header{
 /* FOOTER */
 footer{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     padding: 30px;
     width: 100%;
-    background-color: var(--tanly);
-    > section{
-        margin: 6px;
-    }
+    & .btn-con{
+        display: flex;
+        flex-direction: row;
+        row-gap: 10px;
+        & .footer-btn{
+            padding: 15px 20px;
+            margin: 6px;
+            border-radius: 20px;
+            background-color: var(--browngrey);
+            cursor: pointer;     
+        }
+        & .footer-btn:hover{
+        background-color: var(--greenleaf);
+        }
+        & a{
+            text-decoration: none;
+            color: var(--white);
+        }
+    }    
 }
 
 
@@ -1317,6 +1333,16 @@ p{
 
     .menu-button{
         display: block;
+    }
+
+    /*FOOTER*/
+    footer{
+        justify-content: center;
+        padding: 15px;
+            & a{
+                margin-bottom: 10px;
+            }
+        }    
     }
 
     /*Index-Page*/
