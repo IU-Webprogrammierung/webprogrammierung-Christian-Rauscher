@@ -73,69 +73,65 @@ header{
 .header-nav{
     list-style: none;
     display: flex;
+    & .nav-button{
+        display: flex;
+        padding: 15px 20px;
+        margin: 6px;
+        border: none;
+        border-radius: 20px;
+        background-color: var(--browngrey);
+        cursor: pointer;
+        & a{
+            font-family: "Inter"; sans-serif;
+            font-weight: 500;
+            font-size: 1rem;
+            text-decoration: none;
+            color: var(--white);
+        } 
+    }
+    .nav-button:hover{
+        background-color: var(--greenleaf);
+    }
 }
-
-.nav-button{
-    display: flex;
-    padding: 15px 20px;
-    margin: 6px;
-    border: none;
-    border-radius: 20px;
-    background-color: var(--browngrey);
-    cursor: pointer;
-}
-                
-.nav-button a{
-    font-family: "Inter"; sans-serif;
-    font-weight: 500;
-    font-size: 1rem;
-    text-decoration: none;
-    color: var(--white);
-} 
-            
-.nav-button:hover{
-    background-color: var(--greenleaf);
-}
-            
-        
 
 .sidebar{
     position: fixed;
     top: 0;
     right: 0;
     height: 100vh;
-    width: 300px;
+    width: 100vw;
     z-index: 999;
-    background-color: rgba(255, 255, 255, 0.126); 
-    backdrop-filter: blur(10px);
+    background-color: var(--olive); 
+    backdrop-filter: blur(50px);
     display: none;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-end;
     justify-content: flex-start;
     list-style: none;
-}
-
-.sidebar li{
-    width: 90%;
-}
-
-.sidebar-button{
+    & li{
+        width: 50%;
+    }
+    & li:first-child{
+        width: 65px;
+        margin-top: 18px;
+    }
+    & .sidebar-button{
     display: flex;
-    padding: 10px 20px;
-    margin: 5px;
+    padding: 15px 20px;
+    margin: 5px 16px 5px 0px;
     border: none;
     border-radius: 16px;
     background-color: var(--browngrey);
     cursor: pointer;
+        & a{
+            font-family: "Inter"; sans-serif;
+            font-weight: 500;
+            font-size: 1rem;
+            text-decoration: none;
+            color: var(--white);
+        } 
+    }
 }
-                
-.sidebar-button a{
-    font-family: "Inter"; sans-serif;
-    font-weight: 500;
-    font-size: 1rem;
-    text-decoration: none;
-    color: var(--white);
-} 
 
 .menu-button{
     display: none;
@@ -1326,11 +1322,17 @@ p{
 
 @media(max-width: 769px){
     
-    /*Navigation-Bar*/
-    .nav-button{
-        display: none;
+    /*header*/
+    header{
+        padding: 15px;
     }
 
+    /*Navigation-Bar*/
+    .header-nav{
+        & .nav-button{
+            display: none;
+        }
+    }
     .menu-button{
         display: block;
     }
@@ -1343,7 +1345,6 @@ p{
                 margin-bottom: 10px;
             }
         }    
-    }
 
     /*Index-Page*/
     .index-con{
@@ -1383,7 +1384,7 @@ p{
 
  
 
-
+    
 }
 
 @media all and (min-width: 1023px){
