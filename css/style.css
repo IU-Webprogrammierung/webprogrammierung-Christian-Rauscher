@@ -184,6 +184,14 @@ h2{
     color: var(--browngrey);
 }
 
+h3{
+    font-family: "Inter"; sans-serif; 
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 1;
+    hyphens: auto;
+}
+
 p{
     font-family: "Inter"; sans-serif; 
     font-weight: 400;
@@ -833,6 +841,7 @@ p{
                         background-color: var(--tanly);
                         border-radius: 20px;
                         flex-grow: 1;
+                        color: var(--browngrey);
 
                     }
 
