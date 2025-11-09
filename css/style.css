@@ -3,7 +3,7 @@
 /* -------------------------------------------------------*/
 
 :root{
-    --border: dashed;
+    --border: none;
 
     --border-radius-main-con: 35px;
     --border-radius-img: 25px;
@@ -566,8 +566,9 @@ footer{
                 border: green;
                 border-style: var(--border);
                 display: grid;
-                grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
                 gap: 15px;
+                row-gap: 25px;
                 justify-content: center;
 
                 & .about-subcon-2-skillscard{
@@ -577,7 +578,7 @@ footer{
                     border-radius: var(--border-radius-small);
 
                     > figure {
-                        background-color: var(--tanly);
+                        background-color: var(--browngrey_trans);
                         border-radius: var(--border-radius-small);
                         display: grid;
                         place-items: center;
@@ -597,6 +598,14 @@ footer{
                         padding: 1em;
                         margin-top: 1em;
                         border-radius: var(--border-radius-small);
+                        >p{
+                            padding: 0.2em 0.9em;
+                            margin: 0em 0em 0.6em 0em;
+                            width:fit-content;
+                            background-color: var(--olive_trans);
+                            border-radius: 12px;
+                            font-size: 1em;
+                        }
                     }
                 }
             }
@@ -623,6 +632,7 @@ footer{
                 display: grid;
                 grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
                 gap: 15px;
+                row-gap: 30px;
                 justify-content: center;
 
                 > .about-subcon-3-photocard{
