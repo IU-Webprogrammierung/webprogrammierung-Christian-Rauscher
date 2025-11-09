@@ -485,7 +485,6 @@ footer{
             padding: 2rem;
             border: yellow;
             border-style: var(--border);
-            order: 2;
             width: 1024px;
             display: grid;
             gap: 1.5rem;
@@ -756,8 +755,6 @@ footer{
                     }
                 }
             }
-
-
         }
     }
 }
@@ -1328,43 +1325,75 @@ footer{
 
     /*Index-Page*/
     .index-con{
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-    gap: 2em;
-    border: var(--red);
-    margin: 7.5em 1em 1em 1em;
-    }
-    .index-subcon-content-1{
-    margin: 0rem;
-    padding: 1rem;
-    display: grid;
-    gap: 1rem;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto auto;
-    grid-template-areas:
-    "box-1"
-    "box-4"
-    "box-2"
-    "box-3";
-    }
-    .index-subcon-content-2{
-    margin: 0rem;
-    padding: 1rem;
-    display: grid;
-    gap: 1rem;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto auto;
-    grid-template-areas:
-    "box-1"
-    "box-2"
-    "box-3"
-    "box-4";
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        gap: 2em;
+        border: var(--red);
+        margin: 7.5em 1em 1em 1em;
+        & .index-subcon{
+
+            & .index-subcon-content-1{
+                margin: 0rem;
+                padding: 1.5rem;
+                display: grid;
+                gap: 1rem;
+                grid-template-columns: 1fr;
+                grid-template-rows: auto auto auto auto;
+                grid-template-areas:
+                "box-1"
+                "box-4"
+                "box-2"
+                "box-3";
+            }
+            & .index-subcon-content-2{
+                margin: 0rem;
+                padding: 1.5rem;
+                display: grid;
+                gap: 1rem;
+                grid-template-columns: 1fr;
+                grid-template-rows: auto auto auto auto;
+                grid-template-areas:
+                "box-1"
+                "box-2"
+                "box-3"
+                "box-4";
+            }
+        }
     }
 
- 
+    /* ABOUT */
+    .about-con{
+        gap: 2em;
+        margin: 7.5em 1em 1em 1em;
+        & .about-subcon{
+            /* Über Mich - erster Container */
+            & .about-subcon-content-1{
+                padding: 2rem;
+                display: grid;
+                gap: 1.5rem;
+                grid-template-columns: 1fr;
+                grid-template-rows: auto auto auto auto;
+                grid-template-areas:
+                "box-1"
+                "box-2"
+                "box-4"
+                "box-3";
+            }
 
-    
+            /* Über Mich - Skills Container */
+            & .about-subcon-content-2{
+                
+            }
+            
+            /* Über Mich - Fotos Container */
+            & .about-subcon-content-3{
+                & .about-subcon-3-photos-con{
+                    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+                }
+            }
+        }
+    }
 }
 
 @media all and (min-width: 1023px){
