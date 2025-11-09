@@ -706,45 +706,46 @@ footer{
                 & .cv-subcon-step-card{
                     border: violet;
                     border-style: var(--border);
-                    display: flex; 
-                    justify-content: space-between;
+                    display: flex;
                     flex-wrap: wrap;
-                    height: 150px;
                     gap: 2em;
 
                     & figure{
+                        border: blue;
+                        border-style: var(--border);
                         display: grid;
                         align-items: center;
+                        height: 150px;
                         width: 150px;
                         overflow: hidden;
                         background-color: white;
                         border-radius: var(--border-radius-img);                        
                         & img{
-                            display: flex;
                             margin-left: auto;
                             margin-right: auto;
-                            vertical-align: center;
-                            width: 80%;     
+                            width: 70%;
                         }
                     }
                     & div{
+                        border: blue;
+                        border-style: var(--border);
+                        flex-grow: 1;
                         display: grid;
+                        align-items: center;
                         padding: 1em 0em 1em 2em;
                         background-color: var(--tanly);
                         border-radius: var(--border-radius-img);
-                        flex-grow: 1;
                         color: var(--browngrey);
-
                     }
-
-
+                    & article1{
+                        display: none;
+                        }
+                    & article2{
+                        display: none;
+                    }
                 }
             }
-
-            
         } 
-
-    
     }
 }
 
@@ -1297,6 +1298,90 @@ footer{
             }
         }
     }
+
+    /* CV */
+    .cv-con{
+        gap: 2em;
+        margin: 7.5em 1em 1em 1em;
+
+        & .cv-subcon{
+            & .cv-subcon-content{
+                padding: 1rem;
+                & .cv-subcon-title{
+                    border: green;
+                    border-style: var(--border);
+                    grid-area: box-1;
+                    text-align: left;
+                    padding: 0em;
+                    margin-bottom: 1.5rem;
+                }
+
+                & .cv-subcon-step-container{
+                    border: pink;
+                    border-style: var(--border);
+                    display: flex;
+                    flex-direction: column;
+                    gap: 2em;
+
+                    & .cv-subcon-step-card{
+                        border: violet;
+                        border-style: var(--border);
+                        display: flex;
+                        flex-wrap: wrap;
+                        gap: 0.8em;
+
+                        & figure{
+                            border: blue;
+                            border-style: var(--border);
+                            display: grid;
+                            align-items: center;
+                            height: 90px;
+                            width: 90px;
+                            overflow: hidden;
+                            background-color: white;
+                            border-radius: var(--border-radius-img);                        
+                            & img{
+                                margin-left: auto;
+                                margin-right: auto;
+                                width: 90%;
+                            }
+                        }
+                        & div{
+                            border: blue;
+                            border-style: var(--border);
+                            flex-grow: 1;
+                            display: none;
+                            align-items: center;
+                            padding: 1em 0em 1em 1em;
+                            background-color: var(--tanly);
+                            border-radius: var(--border-radius-img);
+                            color: var(--browngrey);
+                        }
+
+                        & article1{
+                            flex-grow: 1;
+                            display: block;
+                            align-items: center;
+                            padding: 1em 0em 1em 1em;
+                            background-color: var(--browngrey_trans);
+                            border-radius: var(--border-radius-img);
+                            color: var(--browngrey);
+                        }
+                        & article2{
+                            flex-grow: 1;
+                            display: block;
+                            align-items: center;
+                            padding: 1em 0em 1em 1em;
+                            background-color: var(--tanly);
+                            border-radius: var(--border-radius-img);
+                            color: var(--browngrey);
+                        }
+                    }
+                }
+            } 
+        }
+    }
+
 }
 
 @media all and (min-width: 1023px){
