@@ -57,6 +57,15 @@ h3{
     hyphens: auto;
 }
 
+h4{
+    font-family: "Inter"; sans-serif; 
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 1;
+    hyphens: auto;
+    color: var(--browngrey);
+}
+
 p{
     font-family: "Inter"; sans-serif; 
     font-weight: 400;
