@@ -147,6 +147,7 @@ header{
     align-items: flex-end;
     justify-content: flex-start;
     list-style: none;
+    animation: fadein 0.5s;
     & li{
         width: 50%;
     }
@@ -172,6 +173,11 @@ header{
             text-decoration: none;
             color: var(--white);
     }
+}
+
+@keyframes fadein {
+  from { opacity: 0}
+  to   { opacity: 1}
 }
 
 .menu-button{
