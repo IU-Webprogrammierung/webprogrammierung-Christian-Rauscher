@@ -117,20 +117,16 @@ header{
     list-style: none;
     display: flex;
     & .nav-button{
-        display: flex;
-        padding: 15px 20px;
-        margin: 6px;
-        border: none;
-        border-radius: 20px;
+        padding: 0.8em 1.2em;
+        margin-left: 0.8em;
+        border-radius: var(--border-radius-small);
         background-color: var(--browngrey);
         cursor: pointer;
-        & a{
-            font-family: "Inter"; sans-serif;
-            font-weight: 500;
-            font-size: 1rem;
-            text-decoration: none;
-            color: var(--white);
-        } 
+        text-decoration: none;
+        font-family: "Inter"; sans-serif;
+        font-weight: 500;
+        font-size: 1rem;
+        color: var(--white);
     }
     .nav-button:hover{
         background-color: var(--greenleaf);
@@ -145,7 +141,6 @@ header{
     width: 100vw;
     z-index: 999;
     background-image: linear-gradient(-20deg, var(--olive) 0%, var(--tanly) 100%); 
-    backdrop-filter: blur(50px);
     display: none;
     flex-direction: column;
     align-items: flex-end;
@@ -155,35 +150,43 @@ header{
         width: 50%;
     }
     & li:first-child{
-        width: 65px;
-        margin-top: 18px;
+        width: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 40px;
+        margin-top: 5px;
     }
     & .sidebar-button{
-    display: flex;
-    padding: 15px 20px;
-    margin: 5px 16px 5px 0px;
-    border: none;
-    border-radius: 16px;
-    background-color: var(--browngrey);
-    cursor: pointer;
-        & a{
-            font-family: "Inter"; sans-serif;
+        display: flex;
+        padding: 1em 2em;
+        margin: 10px 15px 0px 0px;
+        border: none;
+        border-radius: 20px;
+        background-color: var(--browngrey);
+        cursor: pointer;
+        font-family: "Inter"; sans-serif;
             font-weight: 500;
             font-size: 1rem;
             text-decoration: none;
             color: var(--white);
-        } 
     }
 }
 
 .menu-button{
     display: none;
-    padding: 15px 20px;
-    margin: 2px;
+    padding: 0.8em 1.2em;
     border: none;
-    border-radius: 16px;
+    border-radius: 20px;
     background-color: var(--browngrey);
     cursor: pointer;
+    vertical-align: top;
+    & .svg{
+        display: flex-inline;
+        align-items: center;
+        justify-content: center;
+        vertical-align: middle;
+    }
 }
 
 /* FOOTER */
@@ -1102,7 +1105,7 @@ footer{
     }
 
     .menu-button{
-        display: block;
+        display: inline-block;
     }
 
     /*FOOTER*/
