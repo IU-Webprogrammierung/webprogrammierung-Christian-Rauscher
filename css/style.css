@@ -25,6 +25,7 @@
 
     --olive_trans: oklch(0.7746 0.0286 179.44 / 50%);
     --browngrey_trans: oklch(0.3666 0.0074 153.53 / 10%);
+    --transparent: oklch(0.3666 0.0074 153.53 / 0%)
 }
 
 /* -------------------------------------------------------*/
@@ -375,7 +376,8 @@ footer{
                 border-style: var(--border);
                 display: flex;
                 flex-wrap: wrap;
-                justify-content: space-evenly;  
+                justify-content: space-evenly;
+                column-gap: 10px;
                 & label{
                     display: block;
                     font-weight: 400;
@@ -383,6 +385,9 @@ footer{
                     line-height: 1;
                     margin-bottom: 0.5em;
                     margin-top: 1em;
+                }
+                & div{
+                    flex-grow: 1;
                 }
                 & input[type="text"]{
                     padding: 10px;
@@ -392,6 +397,7 @@ footer{
                     border-radius: 10px;
                     border-style: none;
                     background-color: var(--whitesmoke);
+                    width: 100%;
                 }
                 & input[type="text"]::placeholder {
                 color: var(--beige);
@@ -407,7 +413,7 @@ footer{
                     border-radius: 10px;
                     border-style: none;
                     background-color: var(--whitesmoke);
-                    width: 150px;
+                    width: 100%;
                 }
                 & input[type="email"]{
                     padding: 10px;
@@ -417,6 +423,7 @@ footer{
                     border-radius: 10px;
                     border-style: none;
                     background-color: var(--whitesmoke);
+                    width: 100%;
                 }
                 & input[type="tel"]{
                     padding: 10px;
@@ -426,6 +433,7 @@ footer{
                     border-radius: 10px;
                     border-style: none;
                     background-color: var(--whitesmoke);
+                    width: 100%;
                 }
                 & select {
                     padding: 10px;
@@ -434,12 +442,11 @@ footer{
                     border-style: none;
                     border-radius: 10px;
                     background-color: var(--whitesmoke);
-                    width: 150px;
+                    width: 100%;
                 }
                 & textarea {
                     padding: 10px;
                     font-weight: 300;
-                    font-family: "Inter"; sans-serif;
                     font-size: 1.2em;
                     border-style: none;
                     border-radius: 10px;
@@ -451,11 +458,11 @@ footer{
                     width: 100%;
                 }
                 & .form-button{
-                    width: 100%;
-                    
-                }
-                & div{
-                    flex-grow: 1;
+                    margin-top: 10px;
+                    & input{
+                        margin-right: 10px;
+                        margin-top: 10px;
+                    }
                 }
             }
         }
@@ -1174,6 +1181,7 @@ footer{
     border-style: solid;
     border-color: var(--browngrey);
     border-width: 2px;
+    background-color: var(--transparent);
     text-decoration: none;
     color: var(--browngrey);
     font-family: "Inter"; sans-serif; 
