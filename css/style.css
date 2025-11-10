@@ -1,10 +1,8 @@
-/* -------------------------------------------------------*/
+/* ----------------------------------------------------------------------------*/
 /* COLORS */
-/* -------------------------------------------------------*/
+/* ----------------------------------------------------------------------------*/
 
 :root{
-    --border: none;
-
     --border-radius-main-con: 35px;
     --border-radius-img: 25px;
     --border-radius-small: 20px;
@@ -28,9 +26,9 @@
     --transparent: oklch(0.3666 0.0074 153.53 / 0%)
 }
 
-/* -------------------------------------------------------*/
+/* ------------------------------------------------------------------------------*/
 /* TEXT STYLES */
-/* -------------------------------------------------------*/
+/* ------------------------------------------------------------------------------*/
 
 h1{
     font-family: "Inter"; sans-serif;
@@ -77,9 +75,9 @@ p{
 
 
 
-/* -------------------------------------------------------*/
+/* ------------------------------------------------------------------------------*/
 /* STYLES */
-/* -------------------------------------------------------*/
+/* ------------------------------------------------------------------------------*/
 *{
     box-sizing: border-box;
     margin: 0;
@@ -207,7 +205,6 @@ footer{
     }
 }
 
-
 /*  START  */
 .index-con{
     display: flex;
@@ -218,8 +215,6 @@ footer{
     margin: 9em 2em 2em 2em;
 
     & .index-subcon{
-        border: red;
-        border-style: var(--border);
         background-color: var(--browngrey_trans);
         border-radius: var(--border-radius-main-con);
         display: flex;
@@ -228,8 +223,6 @@ footer{
  
         & .index-subcon-content-1{
             padding: 2rem;
-            border: yellow;
-            border-style: var(--border);
             order: 2;
             width: 1024px;
             display: grid;
@@ -242,8 +235,6 @@ footer{
             "box-4 box-3";
 
             & .index-subcon-1-img{
-                border: green;
-                border-style: var(--border);
                 grid-area: box-4;
                 align-self: stretch;
                 justify-self: stretch;
@@ -258,23 +249,17 @@ footer{
                     border-radius: var(--border-radius-img)}
             }
             & .index-subcon-1-title{
-                border: green;
-                border-style: var(--border);
                 grid-area: box-1;
                 text-align: right;
                 padding: 0em 0em 1rem 0em;
             }
             & .index-subcon-1-text{
-                border: green;
-                border-style: var(--border);
                 grid-area: "box-2";
                 justify-self: center; 
                 align-self: center;
                 padding: 1em 0em 1em 0em;
             }
             & .index-subcon-1-btn{
-                border: green;
-                border-style: var(--border);
                 grid-area: box-3; 
                 justify-self: center; 
                 align-self: center;
@@ -284,8 +269,6 @@ footer{
 
         & .index-subcon-content-2{
             padding: 2rem;
-            border: yellow;
-            border-style: var(--border);
             order: 2;
             width: 1024px;
             display: grid;
@@ -298,8 +281,6 @@ footer{
             "box-3 box-4";
 
             & .index-subcon-2-img{
-            border: green;
-            border-style: var(--border);
             grid-area: box-4;
             align-self: stretch;
             justify-self: stretch;
@@ -314,23 +295,17 @@ footer{
                 border-radius: var(--border-radius-img);}
             }
             & .index-subcon-2-title{
-                border: green;
-                border-style: var(--border);
                 grid-area: box-1;
                 text-align: left;
                 padding: 0em 0em 1rem 0em;
             }
             & .index-subcon-2-text{
-                border: green;
-                border-style: var(--border);
                 grid-area: "box-2";
                 justify-self: center; 
                 align-self: center;
                 padding: 1em 0em 1em 0em;
             }
             & .index-subcon-2-btn{
-                border: green;
-                border-style: var(--border);
                 grid-area: "box-3"; 
                 justify-self: center; 
                 align-self: center;
@@ -340,8 +315,6 @@ footer{
 
         & .index-subcon-content-3{
             padding: 2rem;
-            border: yellow;
-            border-style: var(--border);
             order: 2;
             width: 1024px;
             display: grid;
@@ -354,15 +327,11 @@ footer{
             "box-3";
 
             & .index-subcon-3-title{
-                border: green;
-                border-style: var(--border);
                 grid-area: box-1;
                 text-align: left;
                 padding: 0em 0em 1rem 0em;
             }
             & .index-subcon-3-text{
-                border: green;
-                border-style: var(--border);
                 grid-area: "box-2";
                 justify-self: center; 
                 align-self: center;
@@ -469,7 +438,6 @@ footer{
     }
 }
 
-
 /* ABOUT */
 .about-con{
     display: flex;
@@ -479,8 +447,6 @@ footer{
     margin: 9em 2em 2em 2em;
 
     & .about-subcon{
-        border: red;
-        border-style: var(--border);
         background-color: var(--browngrey_trans);
         border-radius: var(--border-radius-main-con);
         display: flex;
@@ -546,22 +512,16 @@ footer{
         /* Über Mich - Skills Container */
         & .about-subcon-content-2{
             padding: 2rem;
-            border: yellow;
-            border-style: var(--border);
             order: 2;
             width: 1024px;
             display: block;
 
             & .about-subcon-2-title{
-                border: green;
-                border-style: var(--border);
                 text-align: left;
                 padding: 0em 0em 1em 0em;
             }
 
             & .about-subcon-2-skills-con{
-                border: green;
-                border-style: var(--border);
                 display: grid;
                 grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
                 gap: 15px;
@@ -569,8 +529,6 @@ footer{
                 justify-content: center;
 
                 & .about-subcon-2-skillscard{
-                    border: pink;
-                    border-style: var(--border);
                     overflow: hidden;
                     border-radius: var(--border-radius-small);
 
@@ -611,21 +569,15 @@ footer{
         /* Über Mich - Fotos Container */
         & .about-subcon-content-3{
             padding: 2rem;
-            border: yellow;
-            border-style: var(--border);
             width: 1024px;
             display: block;
 
             & .about-subcon-3-title{
-                border: green;
-                border-style: var(--border);
                 text-align: left;
                 padding: 0em 0em 1em 0em;
             }
 
             & .about-subcon-3-photos-con{
-                border: green;
-                border-style: var(--border);
                 display: grid;
                 grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
                 gap: 15px;
@@ -633,8 +585,6 @@ footer{
                 justify-content: center;
 
                 > .about-subcon-3-photocard{
-                    border: pink;
-                    border-style: var(--border);
                     overflow: hidden;
                     border-radius: 20px;
 
@@ -659,7 +609,6 @@ footer{
     }
 }
 
-
 /* CV */
 .cv-con{
     display: flex;
@@ -669,8 +618,6 @@ footer{
     margin: 9em 2em 2em 2em;
 
     & .cv-subcon{
-        border: red;
-        border-style: var(--border);
         background-color: var(--browngrey_trans);
         border-radius: var(--border-radius-main-con);
         display: flex;
@@ -679,13 +626,9 @@ footer{
 
         & .cv-subcon-content{
             padding: 2rem;
-            border: yellow;
-            border-style: var(--border);
             width: 1024px; 
 
             & .cv-subcon-title{
-                border: green;
-                border-style: var(--border);
                 grid-area: box-1;
                 text-align: left;
                 padding: 0em;
@@ -694,22 +637,16 @@ footer{
             }
 
             & .cv-subcon-step-container{
-                border: pink;
-                border-style: var(--border);
                 display: flex;
                 flex-direction: column;
                 gap: 1.5em;
 
                 & .cv-subcon-step-card{
-                    border: violet;
-                    border-style: var(--border);
                     display: flex;
                     flex-wrap: wrap;
                     gap: 2em;
 
                     & figure{
-                        border: blue;
-                        border-style: var(--border);
                         display: grid;
                         align-items: center;
                         height: 150px;
@@ -724,8 +661,6 @@ footer{
                         }
                     }
                     & div{
-                        border: blue;
-                        border-style: var(--border);
                         flex-grow: 1;
                         display: grid;
                         align-items: center;
@@ -755,8 +690,6 @@ footer{
     margin: 9em 2em 2em 2em;
 
     & .study-subcon{
-        border: red;
-        border-style: var(--border);
         background-color: var(--browngrey_trans);
         border-radius: var(--border-radius-main-con);
         display: flex;
@@ -765,8 +698,6 @@ footer{
 
         & .study-subcon-content-1{
             padding: 2rem;
-            border: yellow;
-            border-style: var(--border);
             order: 2;
             width: 1024px;
             display: grid;
@@ -778,8 +709,6 @@ footer{
             "box-2 box-3";
 
             & .study-subcon-1-img{
-            border: green;
-            border-style: var(--border);
             grid-area: box-3;
             align-self: stretch;
             justify-self: stretch;
@@ -794,15 +723,11 @@ footer{
                 border-radius: 25px;}
             }
             & .study-subcon-1-title{
-                border: green;
-                border-style: var(--border);
                 grid-area: box-1;
                 text-align: left;
                 padding: 0em;
             }
             & .study-subcon-1-text{
-                border: green;
-                border-style: var(--border);
                 grid-area: "box-2";
                 justify-self: center; 
                 align-self: center;
@@ -812,8 +737,6 @@ footer{
 
         & .study-subcon-content-2{
             padding: 2rem;
-            border: yellow;
-            border-style: var(--border);
             order: 2;
             width: 1024px;
             display: grid;
@@ -825,8 +748,6 @@ footer{
             "box-2 box-3";
 
             & .study-subcon-2-img{
-            border: green;
-            border-style: var(--border);
             grid-area: box-3;
             align-self: stretch;
             justify-self: stretch;
@@ -841,15 +762,11 @@ footer{
                 border-radius: 25px;}
             }
             & .study-subcon-2-title{
-                border: green;
-                border-style: var(--border);
                 grid-area: box-1;
                 text-align: left;
                 padding: 0em;
             }
             & .study-subcon-2-text{
-                border: green;
-                border-style: var(--border);
                 grid-area: "box-2";
                 justify-self: center; 
                 align-self: center;
@@ -859,21 +776,15 @@ footer{
 
         & .study-subcon-content-3{
             padding: 2rem;
-            border: yellow;
-            border-style: var(--border);
             width: 1024px;
 
             & .study-subcon-3-title{
-                border: green;
-                border-style: var(--border);
                 grid-area: box-1;
                 text-align: left;
                 padding: 0em;
                 gap: 2em;
             }
             & .study-subcon-3-projectcard{
-                border: pink;
-                border-style: var(--border);
                 display: grid;
                 gap: 1em;
                 margin-top: 3em;
@@ -883,8 +794,6 @@ footer{
                 "box-1 box-2"
                 "box-1 box-3";
                 & .study-subcon-3-projectcard-img{
-                    border: green;
-                    border-style: var(--border);
                     grid-area: box-1;
                     overflow: hidden;
                     height: 340px;
@@ -897,8 +806,6 @@ footer{
                     }
                 }
                 & .study-subcon-3-projectcard-title{
-                    border: red;
-                    border-style: var(--border);
                     grid-area: box-2;
                     padding: 1em 0em 1em 2em;
                     background-color: var(--greenleaf);
@@ -908,8 +815,6 @@ footer{
                     align-self: center;
                 }
                 & .study-subcon-3-projectcard-text{
-                    border: green;
-                    border-style: var(--border);
                     grid-area: box-3;
                     padding: 1em ;
                     background-color: var(--tanly);
@@ -931,8 +836,6 @@ footer{
     margin: 9em 2em 2em 2em;
 
     & .hobbies-subcon{
-        border: red;
-        border-style: var(--border);
         background-color: var(--browngrey_trans);
         border-radius: var(--border-radius-main-con);
         display: flex;
@@ -941,8 +844,6 @@ footer{
 
         & .hobbies-subcon-content-1{
             padding: 2rem;
-            border: yellow;
-            border-style: var(--border);
             order: 2;
             width: 1024px;
             display: grid;
@@ -954,8 +855,6 @@ footer{
             "box-2 box-3";
 
             & .hobbies-subcon-1-img{
-            border: green;
-            border-style: var(--border);
             grid-area: box-3;
             align-self: stretch;
             justify-self: stretch;
@@ -970,15 +869,11 @@ footer{
                     border-radius: var(--border-radius-img);}
             }
             & .hobbies-subcon-1-title{
-                border: green;
-                border-style: var(--border);
                 grid-area: box-1;
                 text-align: left;
                 padding: 0em;
             }
             & .hobbies-subcon-1-text{
-                border: green;
-                border-style: var(--border);
                 grid-area: "box-2";
                 justify-self: center; 
                 align-self: center;
@@ -988,8 +883,6 @@ footer{
 
         & .hobbies-subcon-content-2{
             padding: 2rem;
-            border: yellow;
-            border-style: var(--border);
             order: 2;
             width: 1024px;
             display: grid;
@@ -1001,8 +894,6 @@ footer{
             "box-3 box-2";
 
             & .hobbies-subcon-2-img{
-            border: green;
-            border-style: var(--border);
             grid-area: box-3;
             align-self: stretch;
             justify-self: stretch;
@@ -1017,15 +908,11 @@ footer{
                     border-radius: var(--border-radius-img);}
             }
             & .hobbies-subcon-2-title{
-                border: green;
-                border-style: var(--border);
                 grid-area: box-1;
                 text-align: left;
                 padding: 0em;
             }
             & .hobbies-subcon-2-text{
-                border: green;
-                border-style: var(--border);
                 grid-area: "box-2";
                 justify-self: center; 
                 align-self: center;
@@ -1035,8 +922,6 @@ footer{
 
         & .hobbies-subcon-content-3{
             padding: 2rem;
-            border: yellow;
-            border-style: var(--border);
             order: 2;
             width: 1024px;
             display: grid;
@@ -1048,8 +933,6 @@ footer{
             "box-3 box-2";
 
             & .hobbies-subcon-3-img{
-            border: green;
-            border-style: var(--border);
             grid-area: box-3;
             align-self: stretch;
             justify-self: stretch;
@@ -1064,36 +947,32 @@ footer{
                     border-radius: var(--border-radius-img);}
             }
             & .hobbies-subcon-3-title{
-                border: green;
-                border-style: var(--border);
                 grid-area: box-1;
                 text-align: left;
                 padding: 0em;
             }
             & .hobbies-subcon-3-text{
-                border: green;
-                border-style: var(--border);
                 grid-area: "box-2";
-                display: block;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
                 padding: 1em 0em 1em 0em;
-                & a {
-                    border: yellow;
-                    border-style: var(--border);
-                    margin-right: 1em;    
+                & a{
+                    margin-right: 1em;
+                    margin-bottom: 1em;
+                    width: fit-content;
                 }
                 & p{
                 justify-self: center; 
                 align-self: center;
                 padding: 1em 0em 1em 0em;
-                margin-bottom: 1em;
+                margin-bottom: 0em;
                 }
             }
         }
 
         & .hobbies-subcon-content-4{
             padding: 2rem;
-            border: yellow;
-            border-style: var(--border);
             order: 2;
             width: 1024px;
             display: grid;
@@ -1106,8 +985,6 @@ footer{
             "box-4 box-4";
 
             & .hobbies-subcon-4-img{
-            border: green;
-            border-style: var(--border);
             grid-area: box-3;
             align-self: stretch;
             justify-self: stretch;
@@ -1123,15 +1000,11 @@ footer{
                 }
             }
             & .hobbies-subcon-4-title{
-                border: green;
-                border-style: var(--border);
                 grid-area: box-1;
                 text-align: left;
                 padding: 0em;
             }
             & .hobbies-subcon-4-text{
-                border: green;
-                border-style: var(--border);
                 grid-area: box-2;
                 justify-self: center; 
                 align-self: center;
@@ -1140,8 +1013,6 @@ footer{
 
             & .hobbies-subcon-4-photos-con{
                 grid-area: box-4;
-                border: green;
-                border-style: var(--border);
                 display: grid;
                 grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
                 gap: 15px;
@@ -1172,9 +1043,9 @@ footer{
     }
 }
 
-
+/* ------------------------------------------------------------------------------*/
 /* COMPONENTS */
-
+/* ------------------------------------------------------------------------------*/
 .button{
     padding: 1em 2em 1em 2em;
     border-radius: 20px;
@@ -1212,8 +1083,9 @@ footer{
     }     
 }
 
-
-/* MEDIA */
+/* ------------------------------------------------------------------------------*/
+/* MEDIA QUERY*/
+/* ------------------------------------------------------------------------------*/
 
 @media(max-width: 769px){
     
@@ -1228,6 +1100,7 @@ footer{
             display: none;
         }
     }
+
     .menu-button{
         display: block;
     }
@@ -1419,8 +1292,6 @@ footer{
         & .hobbies-subcon{
             & .hobbies-subcon-content-1{
                 padding: 2rem;
-                border: yellow;
-                border-style: var(--border);
                 order: 2;
                 width: 1024px;
                 display: grid;
@@ -1446,11 +1317,6 @@ footer{
 
             & .hobbies-subcon-content-3{
                 padding: 2rem;
-                border: yellow;
-                border-style: var(--border);
-                order: 2;
-                width: 1024px;
-                display: grid;
                 gap: 1.5rem;
                 grid-template-columns: 1fr;
                 grid-template-rows: auto auto auto;
@@ -1459,44 +1325,20 @@ footer{
                 "box-3"
                 "box-2";
 
-                & .hobbies-subcon-3-img{
-                border: green;
-                border-style: var(--border);
-                grid-area: box-3;
-                align-self: stretch;
-                justify-self: stretch;
-                display: grid;            
-                place-items: center;       
-                margin: 0;                 
-                overflow: hidden;          
-                    & img {
-                        display: block;        
-                        max-width: 100%;       
-                        height: auto;
-                        border-radius: var(--border-radius-img);}
-                }
                 & .hobbies-subcon-3-title{
-                    border: green;
-                    border-style: var(--border);
                     grid-area: box-1;
                     text-align: left;
                     padding: 0em;
                 }
                 & .hobbies-subcon-3-text{
-                    border: green;
-                    border-style: var(--border);
-                    grid-area: "box-2";
-                    display: block;
-                    padding: 1em 0em 1em 0em;
+                    padding: 0em 0em 0em 0em;
                     & a {
-                        border: yellow;
-                        border-style: var(--border);
-                        margin-right: 1em;    
+                        margin-right: 0em;
+                        margin-bottom: 1em;
+                        width: 100%;  
                     }
                     & p{
-                    justify-self: center; 
-                    align-self: center;
-                    padding: 1em 0em 1em 0em;
+                    padding: 0em 0em 0em 0em;
                     margin-bottom: 1em;
                     }
                 }
@@ -1504,11 +1346,6 @@ footer{
 
             & .hobbies-subcon-content-4{
                 padding: 2rem;
-                border: yellow;
-                border-style: var(--border);
-                order: 2;
-                width: 1024px;
-                display: grid;
                 gap: 1.5rem;
                 grid-template-columns: 1fr;
                 grid-template-rows: auto auto auto auto;
@@ -1517,15 +1354,10 @@ footer{
                 "box-3"
                 "box-2"
                 "box-4";
+                & .hobbies-subcon-4-text{
+                    padding: 0em 0em 0em 0em;
+                }
             }
         }
     }
-
-
-
-}
-
-@media all and (min-width: 1023px){
-    
-
 }
