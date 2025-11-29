@@ -9,14 +9,14 @@ function hideSidebar(){
     }
 
 // Scroll to Top Button
-let mybutton = document.getElementById("scroll-to-top-button");
-window.onscroll = function() {scrollFunction()};
+    window.onscroll = function() {scrollFunction()}
 
 function scrollFunction(){
+    const mybutton = document.querySelector('.scroll-to-top-button')
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20){
-        mybutton.style.display = "block";
+        mybutton.style.display = 'block';
     } else {
-        mybutton.style.display = "none";
+        mybutton.style.display = 'none';
     }
 }
 
