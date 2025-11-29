@@ -61,13 +61,13 @@
                 <h1 class="index-subcon-3-title">Kontakt</h1>
                 <p class="index-subcon-3-text">Kontaktiere mich gerne über meine Social-Media-Kanäle, per E-Mail oder nutze einfach das Kontaktformular! Ich freue mich auf deine Nachricht!</p>
                 <form action="#" method="post" class="index-subcon-3-form">
-                        <div >
+                        <fieldset>
                             <label for ="company">Firma</label>
-                            <input id ="company" name ="company" type ="text" required placeholder="Firma">
-                        </div>
+                            <input id ="company" name ="company" type ="text">
+                        </fieldset>
 
-                        <div>
-                            <label for ="salutation">Anrede</label>
+                        <fieldset>
+                            <label for ="salutation">Anrede*</label>
                             <select id ="salutation" name ="salutation">
                                 <optgroup label="Anrede">
                                     <option value="s1"></option>
@@ -76,9 +76,9 @@
                                     <option value="s4">keine Angabe</option>
                                 </optgroup>
                             </select>
-                        </div>
+                        </fieldset>
 
-                        <div>
+                        <fieldset>
                             <label for ="title">Titel</label>
                             <select id ="title" name ="title">
                                 <optgroup label="title">
@@ -88,50 +88,50 @@
                                     <option value="t4">Prof. Dr.</option>
                                 </optgroup>
                             </select>
-                        </div>
-                        <div>
-                            <label for ="firstname">Vorname</label>
+                        </fieldset>
+                        <fieldset>
+                            <label for ="firstname">Vorname*</label>
                             <input id ="firstname" name ="firstname" type ="text" required>
-                        </div>
-                        <div>
-                            <label for ="lastname">Nachname</label>
+                        </fieldset>
+                        <fieldset>
+                            <label for ="lastname">Nachname*</label>
                             <input id ="lastname" name ="lastname" type ="text" required>
-                        </div>
-                        <div>
+                        </fieldset>
+                        <fieldset>
                             <label for ="street">Straße</label>
                             <input id ="street" name ="street" type ="text">
-                        </div>
-                        <div>
+                        </fieldset>
+                        <fieldset>
                             <label for ="housenumber">Hausnummer</label>
-                            <input id ="housenumber" name ="housenumber" type ="number">
-                        </div>
-                        <div>
+                            <input id ="housenumber" name ="housenumber" type ="text">
+                        </fieldset>
+                        <fieldset>
                             <label for ="postalcode">Postleitzahl</label>
                             <input id ="postalcode" name ="postalcode" type ="number">
-                        </div>
-                        <div>
+                        </fieldset>
+                        <fieldset>
                             <label for ="city">Ort</label>
                             <input id ="city" name ="city" type ="text">
-                        </div>
-                        <div>
-                            <label for ="email">E-Mail</label>
+                        </fieldset>
+                        <fieldset>
+                            <label for ="email">E-Mail-Adresse*</label>
                             <input id ="email" name ="email" type ="email" required>
-                        </div>
-                        <div>
+                        </fieldset>
+                        <fieldset>
                             <label for ="phone">Telefonnummer</label>
                             <input id ="phone" name ="phone" type ="tel" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
-                        </div>
+                        </fieldset>
                     <div class="message-area">   
-                        <div>
-                            <label for ="message">Nachricht</label>
+                        <fieldset>
+                            <label for ="message">Nachricht*</label>
                             <textarea name="message"></textarea><br>
-                        </div>
+                        </fieldset>
                     </div> 
                     <div class="form-button">
-                        <div>
+                        <fieldset>
                             <input type="submit" value="Absenden" class="button">
                             <input type="reset" value="Abbrechen" class="button">
-                        </div>
+                        </fieldset>
                     </div>
                 </form>
             </article>
