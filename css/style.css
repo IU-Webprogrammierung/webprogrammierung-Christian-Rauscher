@@ -439,6 +439,7 @@ footer{
                 }
                 & .form-button{
                     margin-top: 10px;
+                    flex-grow: 1;
                     & input{
                         margin-right: 10px;
                         margin-top: 10px;
