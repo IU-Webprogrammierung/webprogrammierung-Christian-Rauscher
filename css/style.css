@@ -205,7 +205,7 @@ footer{
     align-items: center;
     padding: 30px 30px 60px 30px;
     width: 100%;
-    & .btn-con{
+    & section{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -1294,8 +1294,17 @@ footer{
     footer{
         justify-content: space-between;
         padding: 30px 15px 60px 15px;
-        & .btn-con{
-            flex-direction: row;
+        flex-direction: column;
+        & section{
+            flex-direction: column;
+            order: 1;
+            & a{
+                text-align: center;
+            }
+        }
+        & p{
+            order: 2;
+            margin: 2em 0em 0em 0em;
         }
         }    
 
