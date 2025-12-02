@@ -1060,6 +1060,36 @@ footer{
     }
 }
 
+/* IMPRESSUM */
+.impressum-con{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    gap: 2em;
+    margin: 9em 2em 2em 2em;
+
+    & .impressum-subcon{
+        background-color: var(--browngrey_trans);
+        border-radius: var(--border-radius-main-con);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+
+        & .impressum-subcon-content{
+            padding: 2rem;
+            width: 1024px; 
+
+            & .impressum-subcon-title{
+                grid-area: box-1;
+                text-align: left;
+                padding: 0em;
+                margin-bottom: 1.5rem;
+                
+            }
+        }
+    }
+}        
+
 /* ------------------------------------------------------------------------------*/
 /* COMPONENTS */
 /* ------------------------------------------------------------------------------*/
@@ -1485,6 +1515,21 @@ footer{
             }
         }
     }
+
+    /* IMPRESSUM */
+    .impressum-con{
+        gap: 2em;
+        margin: 7.5em 0.8em 0.8em 0.8em;
+
+        & .impressum-subcon{
+            & .impressum-subcon-content{
+                padding: 1.5rem 1rem
+                & .impressum-subcon-title{
+                    margin-bottom: 1.5rem;
+                }
+            }
+        }
+    } 
 
     /* FONTS */
     h1{
