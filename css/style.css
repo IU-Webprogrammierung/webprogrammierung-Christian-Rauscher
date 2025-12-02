@@ -149,15 +149,7 @@ header{
     list-style: none;
     animation: fadein 0.5s;
     & li{
-        width: 50%;
-    }
-    & li:first-child{
-        width: 25px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-right: 40px;
-        margin-top: 5px;
+        width: 80%;
     }
     & .sidebar-button{
         display: flex;
@@ -172,6 +164,15 @@ header{
             font-size: 1rem;
             text-decoration: none;
             color: var(--white);
+    }
+    & li:first-child{
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 5px;
+        & a{
+            padding: 1em 1.2em;
+        }
+        
     }
 }
 
