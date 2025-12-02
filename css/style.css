@@ -604,6 +604,7 @@ footer{
                     }
                     > img:hover{
                         opacity: 0.7;
+                        cursor: pointer;
                     }
                     }
                     > div{
@@ -1121,6 +1122,81 @@ footer{
         border-color: var(--greenleaf);
     }
 }
+
+/* Modal Image Styling */
+.modal {
+  z-index: 99;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  overflow: auto;
+  background-color: var(--olive_trans);
+  backdrop-filter: blur(34px);
+  /* display: flex; when shown*/
+  display: none; /* hide initially*/
+  justify-content: center;
+  align-items: center;
+}
+.modal-content {
+  margin: auto;
+}
+
+#modalimg {
+  width: auto;
+  height: auto;
+  display: block;
+  margin: auto;
+  max-height: calc(100vh - 4rem);
+  max-width: calc(100% - 4rem);
+  object-fit: contain;
+  border-radius: var(--border-radius-main-con);
+}
+.close {
+  position: absolute;
+  right: 30px;
+  top: 2rem;
+  z-index: 2;
+  background: var(--tanly);
+  border-radius: var(--border-radius-main-con);
+  color: var(--browngrey);
+  cursor: pointer;
+  padding: 1em 2em 1em 2em;
+  display: flex;
+  font-size: 1em;
+  justify-content: center;
+  align-content: center;
+  &:hover, :focus{
+        background-color: var(--greenleaf);
+        color: var(--white);
+        border-color: var(--greenleaf);
+    }
+}
+.modal-content {
+  animation: fade 1s ease;
+}
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#modalimg {
+  animation: zoom 0.5s ease;
+}
+@keyframes zoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
 
 /* ------------------------------------------------------------------------------*/
 /* MEDIA QUERY*/
