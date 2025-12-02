@@ -327,7 +327,6 @@ footer{
 
         & .index-subcon-content-3{
             padding: 2rem;
-            order: 2;
             width: 1024px;
             display: grid;
             gap: 2rem;
@@ -1241,12 +1240,12 @@ footer{
         flex-grow: 1;
         gap: 2em;
         border: var(--red);
-        margin: 7.5em 1em 1em 1em;
+        margin: 7.5em 0.8em 0.8em 0.8em;
         & .index-subcon{
 
             & .index-subcon-content-1{
                 margin: 0rem;
-                padding: 1.5rem;
+                padding: 1.5rem 1rem;
                 display: grid;
                 gap: 1rem;
                 grid-template-columns: 1fr;
@@ -1259,7 +1258,7 @@ footer{
             }
             & .index-subcon-content-2{
                 margin: 0rem;
-                padding: 1.5rem;
+                padding: 1.5rem 1rem;
                 display: grid;
                 gap: 1rem;
                 grid-template-columns: 1fr;
@@ -1270,18 +1269,21 @@ footer{
                 "box-3"
                 "box-4";
             }
+            & .index-subcon-content-3{
+                padding: 1.5rem 1rem;
+                gap: 1rem;
+            }
         }
     }
 
     /* ABOUT */
     .about-con{
         gap: 2em;
-        margin: 7.5em 1em 1em 1em;
+        margin: 7.5em 0.8em 0.8em 0.8em;
         & .about-subcon{
             /* Über Mich - erster Container */
             & .about-subcon-content-1{
-                padding: 2rem;
-                display: grid;
+                padding: 1.5rem 1rem;
                 gap: 1.5rem;
                 grid-template-columns: 1fr;
                 grid-template-rows: auto auto auto auto;
@@ -1291,11 +1293,15 @@ footer{
                 "box-4"
                 "box-3";
             }
+            & .about-subcon-content-2{
+                padding: 1.5rem 1rem;
+            }
             
             /* Über Mich - Fotos Container */
             & .about-subcon-content-3{
+                padding: 1.5rem 1rem;
                 & .about-subcon-3-photos-con{
-                    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+                    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
                 }
             }
         }
@@ -1304,11 +1310,11 @@ footer{
     /* CV */
     .cv-con{
         gap: 2em;
-        margin: 7.5em 1em 1em 1em;
+        margin: 7.5em 0.8em 0.8em 0.8em;
 
         & .cv-subcon{
             & .cv-subcon-content{
-                padding: 1.5rem;
+                padding: 1.5rem 1rem;
                 & .cv-subcon-title{
                     margin-bottom: 1.5rem;
                 }
@@ -1358,10 +1364,10 @@ footer{
     /* STUDY */
     .study-con{
         gap: 2em;
-        margin: 7.5em 1em 1em 1em;
+        margin: 7.5em 0.8em 0.8em 0.8em;
         & .study-subcon{
             & .study-subcon-content-1{
-                padding: 2rem;
+                padding: 1.5rem 1rem;
                 gap: 1.5rem;
                 grid-template-columns: 1fr;
                 grid-template-rows: auto auto auto;
@@ -1372,7 +1378,7 @@ footer{
             }
 
             & .study-subcon-content-2{
-                padding: 2rem;
+                padding: 1.5rem 1rem;
                 gap: 1.5rem;
                 grid-template-columns: 1fr;
                 grid-template-rows: auto auto auto;
@@ -1383,7 +1389,7 @@ footer{
             }
 
             & .study-subcon-content-3{
-                padding: 2rem;
+                padding: 1.5rem 1rem;
                 & .study-subcon-3-title{
                     text-align: left;
                     padding: 0em;
@@ -1406,11 +1412,11 @@ footer{
     /* HOBBIES */ 
     .hobbies-con{
         gap: 2em;
-        margin: 7.5em 1em 1em 1em;
+        margin: 7.5em 0.8em 0.8em 0.8em;
 
         & .hobbies-subcon{
             & .hobbies-subcon-content-1{
-                padding: 2rem;
+                padding: 1.5rem 1rem;
                 order: 2;
                 width: 1024px;
                 display: grid;
@@ -1424,7 +1430,7 @@ footer{
             }
 
             & .hobbies-subcon-content-2{
-                padding: 2rem;
+                padding: 1.5rem 1rem;
                 gap: 1.5rem;
                 grid-template-columns: 1fr;
                 grid-template-rows: auto auto auto;
@@ -1435,7 +1441,7 @@ footer{
             }
 
             & .hobbies-subcon-content-3{
-                padding: 2rem;
+                padding: 1.5rem 1rem;
                 gap: 1.5rem;
                 grid-template-columns: 1fr;
                 grid-template-rows: auto auto auto;
@@ -1464,7 +1470,7 @@ footer{
             }
 
             & .hobbies-subcon-content-4{
-                padding: 2rem;
+                padding: 1.5rem 1rem;
                 gap: 1.5rem;
                 grid-template-columns: 1fr;
                 grid-template-rows: auto auto auto auto;
@@ -1484,7 +1490,7 @@ footer{
     h1{
         font-family: "Inter"; sans-serif;
         font-weight: 700;
-        font-size: 2.4rem;
+        font-size: 2.3rem;
         line-height: 1;
         hyphens: auto;
         color: var(--browngrey);
