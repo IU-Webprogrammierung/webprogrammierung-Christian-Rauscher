@@ -1,3 +1,4 @@
+// Sidebar Menu
 function showSidebar(){
     const sidebar = document.querySelector('.sidebar')
     sidebar.style.display = 'flex'
@@ -22,4 +23,10 @@ function scrollFunction(){
 
 function topFunction() {
     document.documentElement.scrollTop = 0;
+}
+
+//Modal Image Viewer
+function onClick(element){
+    document.getElementById("modalimg").src = element.src;
+    document.getElementById("modaldiv").style.display = "flex";
 }
