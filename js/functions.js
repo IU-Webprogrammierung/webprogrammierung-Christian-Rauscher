@@ -26,7 +26,7 @@ function topFunction() {
 }
 
 //Modal Image Viewer
-function onClick(element){
+function modalImgViewer(element){
     document.getElementById("modalimg").src = element.src;
     document.getElementById("modaldiv").style.display = "flex";
 }
