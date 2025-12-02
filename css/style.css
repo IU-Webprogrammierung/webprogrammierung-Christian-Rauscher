@@ -1173,9 +1173,7 @@ footer{
     z-index: 99;
     padding: 1em 2em 1em 2em;
     border-radius: var(--border-radius-main-con);
-    border-style: none;
-    border-color: var(--browngrey);
-    border-width: 2px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 19px 0 rgba(0, 0, 0, 0.19);
     background-color: var(--tanly);
     text-decoration: none;
     color: var(--browngrey);
@@ -1287,6 +1285,10 @@ footer{
     .menu-button{
         display: inline-block;
     }
+
+    .scroll-to-top-button{
+    right: 0.8em;
+}
 
     /*FOOTER*/
     footer{
