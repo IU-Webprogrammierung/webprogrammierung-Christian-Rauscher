@@ -1078,13 +1078,47 @@ footer{
         & .impressum-subcon-content{
             padding: 2rem;
             width: 1024px; 
-
             & .impressum-subcon-title{
-                grid-area: box-1;
                 text-align: left;
-                padding: 0em;
-                margin-bottom: 1.5rem;
-                
+                margin-bottom: 1rem;
+            }
+            & h2{
+                margin-top: 2rem;
+                margin-bottom: 1rem;
+            }
+            & .impressum-subcon-adress{
+                margin: 2em 0em 2em 2em;
+            }
+            & h3{
+                margin-top: 2rem;
+            }
+            & ul{
+                width: fit-content;
+                display: flex;
+                align-items: flex-start;
+                justify-content: flex-start;
+                flex-wrap: wrap;
+                flex-direction: row;
+                list-style: none;
+                margin-top: 15px;
+                row-gap: 15px;
+                column-gap: 15px;
+                & a{
+                    display: flex;
+                    padding: 1em 2em;
+                    border-radius: var(--border-radius-small);
+                    background-color: var(--tanly);
+                    cursor: pointer;
+                    font-family: "Inter"; sans-serif;
+                        font-weight: 500;
+                        font-size: 1rem;
+                        text-decoration: none;
+                        color: var(--browngrey);
+                }
+                & a:hover{
+                    background-color: var(--greenleaf);
+                    color: var(--white);
+                }
             }
         }
     }
@@ -1572,6 +1606,4 @@ footer{
         font-weight: 400;
         font-size: 1.1em;
         line-height: 1.4;
-        color: var(--browngrey);
-    }
-}
+        color: var(--browngre
