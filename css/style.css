@@ -10,9 +10,6 @@
     /*Neutral */
     --white: oklch(1 0 0);
     --whitesmoke: oklch(0.97 0 0);
-    --grey1: oklch(0.80 0 0 / 20%);
-    --grey: oklch(0.5842 0.0139 275.94);
-    --grey-darker: oklch(0.3576 0.0139 275.94);
     --black: oklch(0.0846 0.0139 275.94);
 
     /* Color-Palette */
