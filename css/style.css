@@ -1179,10 +1179,12 @@ footer{
     font-size: 1em;
     line-height: 1.4;
     transition: all 0.3s ease-out;
+    border: none;
     &:hover, :focus{
         background-color: var(--greenleaf);
         color: var(--white);
         border-color: var(--greenleaf);
+        cursor: pointer;
     }
 }
 
