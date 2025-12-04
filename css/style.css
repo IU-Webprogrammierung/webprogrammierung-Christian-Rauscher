@@ -432,7 +432,6 @@ footer{
                     border: none;
                     flex-grow: 1;
                 }
-
                 & .message-area{
                     width: 100%;
                 }
@@ -444,7 +443,6 @@ footer{
                         margin-top: 10px;
                     }
                 }
-
                 & input:focus, textarea:focus, select:focus{
                     outline-style: solid;
                     outline-color: var(--greenleaf);
@@ -1208,7 +1206,6 @@ footer{
 .modal-content {
   margin: auto;
 }
-
 #modalimg {
   width: auto;
   height: auto;
@@ -1250,7 +1247,6 @@ footer{
     opacity: 1;
   }
 }
-
 #modalimg {
   animation: zoom 0.5s ease;
 }
@@ -1288,7 +1284,7 @@ footer{
 
     .scroll-to-top-button{
     right: 0.8em;
-}
+    }
 
     /*FOOTER*/
     footer{
@@ -1306,7 +1302,7 @@ footer{
             order: 2;
             margin: 2em 0em 0em 0em;
         }
-        }    
+    }    
 
     /*Index-Page*/
     .index-con{
@@ -1565,7 +1561,6 @@ footer{
     .impressum-con{
         gap: 2em;
         margin: 7.5em 0.8em 0.8em 0.8em;
-
         & .impressum-subcon{
             & .impressum-subcon-content{
                 padding: 1.5rem 1rem
@@ -1574,8 +1569,8 @@ footer{
                 }
             }
         }
-    } 
-
+    }
+    
     /* FONTS */
     h1{
         font-family: "Inter"; sans-serif;
@@ -1619,3 +1614,5 @@ footer{
         line-height: 1.4;
         color: var(--browngrey)
     }
+
+}
